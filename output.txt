@@ -1,0 +1,21 @@
+1|dong|12341234
+3|people|1234
+4|person|5678
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE user(id integer primary key autoincrement, name, password);
+INSERT INTO "user" VALUES(1,'dong','12341234');
+INSERT INTO "user" VALUES(3,'people','1234');
+INSERT INTO "user" VALUES(4,'person','5678');
+COMMIT;
+        echo: off
+         eqp: off
+     explain: auto
+     headers: off
+        mode: list
+   nullvalue: ""
+      output: E:/Temp/database/output.txt
+colseparator: "|"
+rowseparator: "\n"
+       stats: off
+       width: 
